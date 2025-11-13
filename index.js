@@ -12,3 +12,25 @@ verbutton.addEventListener("click", () => {
     spa[i].classList.toggle("spaa");
   }
 });
+
+// const box=document.getElementById("dis");
+const box = document.getElementsByClassName("content");
+const pre = document.getElementsByClassName("pre-btn");
+const next = document.getElementsByClassName("next-btn");
+const distaance = 400;
+
+pre[0].addEventListener("click", () => {
+  box[0].scrollBy({ left: -distaance, behavior: "smooth" });
+});
+
+next[0].addEventListener("click", () => {
+  box[0].scrollBy({ left: distaance, behavior: "smooth" });
+});
+
+pre[1].addEventListener("click", () => {
+  box[1].scrollBy({ left: -distaance, behavior: "smooth" });
+});
+
+next[1].addEventListener("click", () => {
+  box[1].scrollBy({ left: distaance, behavior: "smooth" });
+});
