@@ -8,8 +8,10 @@ const spa = document.querySelectorAll(".spa");
 verbutton.addEventListener("click", () => {
   verticalmenu.classList.toggle("verticalmenuadd");
 
+
   for (let i = 0; vericon.length > i; i++) {
     spa[i].classList.toggle("spaa");
+    vericon[i].classList.toggle("vericonadd");
   }
 });
 
